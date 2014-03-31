@@ -1,0 +1,28 @@
+<h1>Listing aptitudes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Competence</th>
+      <th>Tag</th>
+      <th>Mail</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aptitudes.each do |aptitude| %>
+      <tr>
+        <td><%= aptitude.competence %></td>
+        <td><%= aptitude.tag %></td>
+        <td><%= aptitude.mail %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aptitude', new_aptitude_path %>

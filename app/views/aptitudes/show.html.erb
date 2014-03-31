@@ -1,0 +1,18 @@
+
+<p>
+  <strong>Competence:</strong>
+  <%= @aptitude.competence %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @aptitude.tag %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @aptitude.mail %>
+</p>
+
+<%= link_to 'Edit', edit_aptitude_path(@aptitude) %> |
+<%= link_to 'Back', aptitudes_path %>

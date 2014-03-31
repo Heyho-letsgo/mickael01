@@ -1,0 +1,18 @@
+<%= form_for(@aptitude) do |f| %>
+
+    <div class="field">
+    <%= f.label :competence %><br>
+    <%= f.text_field :competence %>
+      </div>
+
+    <div class="field">
+      <%= f.label :tag %><br>
+      <%= f.text_field :tag %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit 'Nouvelle compétence' %>
+  </div>
+
+
+<% end %>
